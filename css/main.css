@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media only screen and (min-width: 577px) {
+  /*---Variables---*/
+  /*---Mixins---*/
+  .test {
+    position: relative; }
+
+  body {
+    font-family: "Open Sans", sans-serif; }
+
+  /*---Navbar---*/
+  /*---Nesting---*/
+  nav {
+    background-color: #462066;
+    height: 50px; }
+    nav h1 {
+      margin-top: 10px;
+      float: left;
+      margin-left: 5%;
+      font-size: 1.5em;
+      color: #FFB85F; }
+    nav ul {
+      margin-top: 15px;
+      float: right;
+      margin-right: 5%; }
+      nav ul li {
+        display: inline-block;
+        margin-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-right: 1px solid black;
+        border-left: 1px solid black; }
+        nav ul li a {
+          text-decoration: none;
+          color: #FFB85F; }
+
+  .navigation {
+    position: relative; }
+
+  .navContainer {
+    max-width: 1050px;
+    margin: 0 auto; }
+
+  a:hover {
+    color: white;
+    text-decoration: underline; }
+
+  .navContainer h1:hover {
+    color: white; }
+
+  .header {
+    width: 940px;
+    height: 240px;
+    background-image: url(../images/header-image.jpg);
+    margin: 20px auto;
+    position: relative; }
+
+  .wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%; }
+
+  .topSection p, .images p, .themeContent p {
+    font-weight: 300;
+    line-height: 1.2em; }
+
+  .topSection h1, .images h1, .themeContent h1 {
+    font-size: 1.5em;
+    /*---OPERATOR---*/
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #00AAA0; }
+
+  .images {
+    text-align: center;
+    background: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .images img {
+      margin: 5px 15px 5px 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      /*---MIXIN---*/ }
+
+  .images {
+    /*---EXTEND---*/ }
+
+  .themeContent {
+    margin-top: 30px;
+    display: inline-block;
+    width: 48%;
+    /*---OPERTATOR---*/ }
+
+  .themeContent {
+    /*---EXTEND---*/ }
+
+  footer {
+    background: #462066;
+    height: 45px;
+    margin-top: 50px; }
+    footer ul {
+      text-align: center;
+      padding-top: 15px; }
+      footer ul li {
+        display: inline-block;
+        margin-left: 8px;
+        color: #FFB85F; } }
+/*End of the desktop rules*/
+@media only screen and (max-width: 576px) {
+  /*---Variables---*/
+  /*---Mixins---*/
+  body {
+    font-family: "Open Sans", sans-serif; }
+
+  nav {
+    height: 250px;
+    background: #462066; }
+    nav h1 {
+      padding-top: 15px;
+      font-size: 1.5em;
+      text-align: center;
+      color: #FFB85F;
+      margin-bottom: 20px; }
+    nav ul {
+      display: block;
+      text-align: center; }
+      nav ul li {
+        background: #FFB85F;
+        display: block;
+        padding: 10px;
+        margin: 10px auto;
+        opacity: .9; }
+        nav ul li a {
+          text-decoration: none;
+          color: white; }
+
+  .header {
+    height: 147px;
+    background-image: url(../images/header-image_phone.jpg);
+    position: relative;
+    margin-bottom: 20px; }
+
+  .wrapper {
+    margin-left: 2%;
+    width: 96%; }
+    .wrapper h1 {
+      text-align: center;
+      font-weight: 700;
+      padding: 20px;
+      color: #00AAA0; }
+    .wrapper p {
+      font-weight: 300; }
+
+  .images {
+    text-align: center; }
+    .images img {
+      margin: 15px 0 15px 0; }
+
+  footer {
+    background: #462066;
+    margin-top: 30px;
+    padding: 15px 0 15px 0; }
+    footer ul {
+      text-align: center; }
+      footer ul li {
+        display: inline-block;
+        color: #FFB85F; } }
+
+/*# sourceMappingURL=main.css.map */

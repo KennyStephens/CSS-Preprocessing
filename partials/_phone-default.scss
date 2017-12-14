@@ -1,0 +1,101 @@
+/*---Variables---*/
+$main-color: #462066;
+$accent-color: #FFB85F;
+$header-color: #00AAA0;
+
+$main-font: 'Open Sans', sans-serif;
+$light: 300;
+$heavy: 700;
+
+/*---Mixins---*/
+@mixin border-radius($radius){
+    -webkit-border-radius:$radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius:$radius;
+    border-radius:$radius;
+
+}
+
+body{
+    font-family: $main-font;
+}
+
+
+
+nav{
+    height: 250px;
+    background: $main-color;
+    h1{
+        padding-top: 15px;
+        font-size: 1.5em;
+        text-align: center;
+        color: $accent-color;
+        margin-bottom: 20px;
+    }
+    
+    ul{
+        display:block;
+        text-align: center;
+        
+        li{
+            background: $accent-color;
+            display: block;
+            padding: 10px;
+            margin: 10px auto;
+            opacity: .9;
+            
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.header{
+    
+    height: 147px;
+    background-image: url(../images/header-image_phone.jpg);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    margin-left: 2%;
+    width: 96%;
+    
+    h1{
+        text-align: center;
+        font-weight: $heavy;
+        padding: 20px;
+        color: $header-color;
+        
+    }
+    
+    p{
+        font-weight: $light;
+    }
+}
+
+.images{
+    text-align: center;
+    
+    img{
+        margin: 15px 0 15px 0;
+    }
+}
+
+footer{
+    background: $main-color;
+    margin-top: 30px;
+    padding: 15px 0 15px 0;
+    
+    ul{
+        text-align: center;
+        
+        li{
+            display: inline-block;
+            color: $accent-color;
+        }
+    }
+}
